@@ -1,0 +1,71 @@
+:root{ 
+	--dcmb-bg: #F4EFC9
+	--dcmb-text: #FCF6D2;
+	--dcmb-dark: #58403C;
+	
+	--dcmb-blue: #3B9492;
+	--dcmb-blue-dark: #387675;
+	--dcmb-blue-light: #8FC6B3;
+	
+	--dcmb-yellow: #f9f5dd;
+	--dcmb-orange: #f68e56;
+	--dcmb-brown: #58403d;
+}
+
+
+@font-face {
+    font-family: Hollywood;  
+    src: url(static/font/HollywoodHills.ttf);  
+    font-weight: normal;  
+}
+
+/* Page setup styles */
+
+/* Header styles */
+
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1000px;
+    z-index: -1;
+}
+
+header img {
+    width: 100%;
+}
+
+/* Main body styles */
+
+main {
+    z-index: 0;
+    /* margin-top: 100%; */
+    background-color: var(--dcmb-yellow);
+}
+
+main h1, 
+main h2 {
+	font-family: "Hollywood";
+	text-shadow: 4px 4px var(--dcmb-brown);
+    letter-spacing: 0.01em;
+    font-weight: 400;
+
+    color: white;
+	background-color: var(--dcmb-orange);
+
+	text-align: center;
+	padding: 0.2em;
+	margin: auto;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 4em;
+}
+
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
