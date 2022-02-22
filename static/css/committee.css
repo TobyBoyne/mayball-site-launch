@@ -1,0 +1,35 @@
+.committee {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+
+    row-gap: 3em;
+    column-gap: 1em;
+
+}
+
+.committee-member {
+    text-align: center;
+    flex-basis: 30%;
+    color: white;
+}
+
+/* ensure the president is in the middle */
+.committee .committee-member:nth-child(n + 3) {
+    order: 2;
+}
+
+#president {
+    order: 1;
+}
+
+/* for small screens, move from three columns to one */
+@media (max-width: 992px) {
+    .committee-member {
+        flex-basis: 100%;
+    }
+
+    #president {
+        order: 0;
+    }
+}
