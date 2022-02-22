@@ -9,132 +9,167 @@
   </head>
   <body>
     <nav>
-      <p>navbar</p>
-    </nav>
-    <div class="wrapper">
-      <div class="parallax-container">
-        <header>
-          <img
-            src="static/img/poster_large.png"
-            alt="Once Upon A Time in Hollywood movie poster"
-            class="poster"
-          />
-          <h1>Once Upon a Time in Hollywood</h1>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, rerum?
-          </p>
-          <!-- <button > Buy Tickets! </button> -->
-          <a href="#tickets">Clicky</a>
-        </header>
-        <main>
-          <section class="static">
-            <h2>Downing May Ball</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-              excepturi!
-            </p>
-          </section>
-          <section class="static">
-            <h2>Entertainment</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-              excepturi!
-            </p>
-          </section>
-          <section class="static">
-            <h2 id="tickets">Tickets</h2>
-            <p>The general release date will be announced soon!<br>
-              The ticket prices shown below are <span class="price">student/non-student/bursary</span>.
-              Guests will pay the same price as the person who invited them, except where access (or 2020/21 alumni) 
-              discounts are applicable. 
-              In this case, the discount applies only to the ticket holder of an appropriate means-tested 
-              metric as set out by the Committee. <br>
-              Alumni in the 2020/21 graduation groups can buy tickets at <strong>student</strong> prices. <br><br>
-              Current Downing students will be allowed 4 guests. Downing alumni are allowed 1 guest.
-              The guests do <em>not</em> need to buy the same ticket type as the person who invited them.
-          </p>
-          <div class="ticket-prices">
-              <ul class="flex">
-                  <li class="separator" aria-hidden="true" role="presentation"></li>
-
-                  <li class="ticket">
-                      <h3>Standard</h3>
-                      <p>
-                          <span class="price">£160/£178/£120</span> <br>
-                          Inclusive access to the best food, drinks and entertainments on offer. 
-                          Standard entry ticket holders will be able to enter the Ball from 8:30pm.
-                      </p>
-                  </li>
-
-                  <li class="separator" aria-hidden="true" role="presentation"></li>
-
-                  <li class="ticket">
-                      <h3>Queue Jump</h3>
-                      <p>
-                          <span class="price">£172/£190/£132</span> <br>
-                          Inclusive access to all of the delights the May Ball offers, and will be 
-                          able to guarantee first entry. With a queue jump ticket there's no waiting around to get in to the Ball.
-                      </p>
-                  </li>
-
-                  <li class="separator" aria-hidden="true" role="presentation"></li>
-
-                  <li class="ticket">
-                      <h3>VIP</h3>
-                      <p>
-                          <span class="price">£178/£196/£138</span> <br>
-                          You can enter the May Ball from 7:30pm, and will have access to an exclusive 
-                          champagne reception, as well as entertainments and other offerings that 
-                          will be seen by no other ticket holders.
-                      </p>
-                  </li>
-
-                  <li class="separator" aria-hidden="true" role="presentation"></li>
-
-                  <li class="ticket">
-                      <h3>Dining</h3>
-                      <p>
-                          <span class="price">£190/£208/£150</span> <br>
-                          You can enter the May Ball from 6:15pm and will be given a full three course 
-                          meal courtesy of Downing catering, as well as exclusive entertainments 
-                          offered to no other ticket holder.
-                      </p>
-                  </li>
-                  
-                  <li class="separator" aria-hidden="true" role="presentation"></li>
-              </ul>
-          </div>
-          </section>
-          <section class="static">
-            <h2>Access, Eco, Sustainability</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-              excepturi!
-            </p>
-          </section>
-          <section class="static">
-            <h2>Staffing</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-              excepturi!
-            </p>
-          </section>
-      
-          <section class="parallax">
-            <img src="static/img/stock_cinema.jpg" alt="Cinema">
-          </section>
-          <section class="static">
-            <h2>Committee</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-              excepturi!
-            </p>
-          </section>
-        </main>
-        <footer>
-          <p>See our <strong>Privacy Policy</strong></p>
-        </footer>
+      <div class="logo">
+        <p>DMBC Studios</p>
       </div>
-    </div>
+      <ul class="navlinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#tickets">Tickets</a></li>
+        <li><a href="#entertainment">Entertainment</a></li>
+        <li><a href="#ecoaccess">Access Eco Sustainability</a></li>
+        <li><a href="#staffing">Staffing</a></li>
+        <li><a href="#committee">Committee</a></li>
+      </ul>
+    </nav>
+    <header>
+      <div class="header-grid">
+        <div class="still">
+          <img
+            src="static/img/producer_director.jpg"
+            alt="Once Upon A Time in Hollywood movie still"
+            class="movie-still"
+          />
+        </div>
+
+          <div class="movie-description">
+            <div class="poster-container">
+              <img
+                src="static/img/poster_large.png"
+                alt="Once Upon A Time in Hollywood movie poster"
+                class="movie-poster"
+              />
+            </div>
+            <div class="title">
+              <p><span class="now-showing">Now showing:</span></p>
+              <h1>Once Upon a Time in Hollywood</h1>
+            </div>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias,
+              rerum?
+            </p>
+            <!-- <button > Buy Tickets! </button> -->
+            <a class="button" href="#tickets">Book Tickets &raquo;</a>
+          </div>
+      </div>
+    </header>
+    <main class="parallax-container">
+      <section class="static" id="about">
+        <h2>Downing May Ball</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+          excepturi!
+        </p>
+      </section>
+      <section class="static">
+        <h2>Entertainment</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+          excepturi!
+        </p>
+      </section>
+      <section class="static" id="tickets">
+        <h2>Tickets</h2>
+        <p>
+          The general release date will be announced soon!<br />
+          The ticket prices shown below are
+          <span class="price">student/non-student/bursary</span>. Guests will
+          pay the same price as the person who invited them, except where access
+          (or 2020/21 alumni) discounts are applicable. In this case, the
+          discount applies only to the ticket holder of an appropriate
+          means-tested metric as set out by the Committee. <br />
+          Alumni in the 2020/21 graduation groups can buy tickets at
+          <strong>student</strong> prices. <br /><br />
+          Current Downing students will be allowed 4 guests. Downing alumni are
+          allowed 1 guest. The guests do <em>not</em> need to buy the same
+          ticket type as the person who invited them.
+        </p>
+        <div class="ticket-prices">
+          <ul class="flex">
+            <li class="separator" aria-hidden="true" role="presentation"></li>
+
+            <li class="ticket">
+              <h3>Standard</h3>
+              <p>
+                <span class="price">£160/£178/£120</span> <br />
+                Inclusive access to the best food, drinks and entertainments on
+                offer. Standard entry ticket holders will be able to enter the
+                Ball from 8:30pm.
+              </p>
+            </li>
+
+            <li class="separator" aria-hidden="true" role="presentation"></li>
+
+            <li class="ticket">
+              <h3>Queue Jump</h3>
+              <p>
+                <span class="price">£172/£190/£132</span> <br />
+                Inclusive access to all of the delights the May Ball offers, and
+                will be able to guarantee first entry. With a queue jump ticket
+                there's no waiting around to get in to the Ball.
+              </p>
+            </li>
+
+            <li class="separator" aria-hidden="true" role="presentation"></li>
+
+            <li class="ticket">
+              <h3>VIP</h3>
+              <p>
+                <span class="price">£178/£196/£138</span> <br />
+                You can enter the May Ball from 7:30pm, and will have access to
+                an exclusive champagne reception, as well as entertainments and
+                other offerings that will be seen by no other ticket holders.
+              </p>
+            </li>
+
+            <li class="separator" aria-hidden="true" role="presentation"></li>
+
+            <li class="ticket">
+              <h3>Dining</h3>
+              <p>
+                <span class="price">£190/£208/£150</span> <br />
+                You can enter the May Ball from 6:15pm and will be given a full
+                three course meal courtesy of Downing catering, as well as
+                exclusive entertainments offered to no other ticket holder.
+              </p>
+            </li>
+
+            <li class="separator" aria-hidden="true" role="presentation"></li>
+          </ul>
+        </div>
+
+        <section class="parallax">
+          <img src="static/img/howard_cinema.jpg" alt="Howard Cinema" />
+        </section>
+      </section>
+      <section class="static" id="ecoaccess">
+        <h2>Access, Eco, Sustainability</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+          excepturi!
+        </p>
+      </section>
+      <section class="static" id="staffing">
+        <h2>Staffing</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+          excepturi!
+        </p>
+      </section>
+
+      <section class="parallax">
+        <img src="static/img/stock_cinema.jpg" alt="Cinema" />
+      </section>
+
+      <section class="static">
+        <h2>Committee</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+          excepturi!
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>See our <strong>Privacy Policy</strong></p>
+    </footer>
   </body>
 </html>
