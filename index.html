@@ -9,7 +9,7 @@
       content="Downing May Ball 2022 - Once Upon a Time in Hollywood"
     />
     <title>Downing May Ball 2022</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="static/css/style.css" />
     <link rel="stylesheet" href="static/css/committee.css" />
     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
     <script src="static/js/parallax.js" defer></script>
@@ -17,19 +17,29 @@
   <body>
     <nav>
       <div class="logo">
-        <p>DMBC Studios</p>
+        <a href="/">
+          <img src="/static/img/logo.png" alt="DCMB Studios Logo">
+        </a>
       </div>
       <ul class="navlinks">
         <li><a href="#about">About</a></li>
         <li><a href="#tickets">Tickets</a></li>
         <li><a href="#entertainment">Entertainment</a></li>
         <li><a href="#ecoaccess">Access and Sustainability</a></li>
+        <li><a href="#charities">Charities</a></li>
         <li><a href="#committee">Committee</a></li>
       </ul>
     </nav>
     <header>
       <div class="header-grid">
         <div class="still">
+          <div class="poster-container">
+            <img
+              src="static/img/poster.png"
+              alt="Once Upon A Time in Hollywood movie poster"
+              class="movie-poster"
+            />
+          </div>
           <img
             src="static/img/producer_director.jpg"
             alt="Once Upon A Time in Hollywood movie still"
@@ -38,22 +48,10 @@
         </div>
 
         <div class="movie-description">
-          <div class="poster-container">
-            <img
-              src="static/img/poster_large.png"
-              alt="Once Upon A Time in Hollywood movie poster"
-              class="movie-poster"
-            />
-          </div>
           <div class="title">
             <p><span class="now-showing">Now showing:</span></p>
             <h1>Once Upon a Time in Hollywood</h1>
           </div>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias,
-            rerum?
-          </p>
-          <!-- <button > Buy Tickets! </button> -->
           <a class="button" href="#tickets">Ticket info &raquo;</a>
         </div>
       </div>
@@ -62,8 +60,28 @@
       <section class="static" id="about" aria-labelledby="about">
         <h2 id="about-title">Downing May Ball</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-          excepturi!
+          Downing May Ball is one of several biennial May Balls held in
+          Cambridge to help students celebrate the end of their exams. The May
+          Balls are one of the most iconic traditions and Downing is proud to
+          hold one of the most extensive and extravagant May Balls in the
+          Cambridge calendar, doing our bit to keep the tradition alive and help
+          students from all walks of life create long-lasting memories of their
+          Cambridge experience.
+          <br /><br />
+          The Downing May Ball is held on the historic site of Downing College,
+          set on seventeen acres in the heart of Cambridge. With few enclosed
+          courts and plenty of green space, Downing May Ball is almost unique in
+          the opportunities it offers to guests to move freely around the space
+          and take in the whole Ball from its Quadrangle and Paddock.
+          <br /><br />
+          Nevertheless, the Downing May ball will boast more than six uniquely
+          themed areas, dozens of food and drinks options, and three stages
+          where acts will perform throughout the night from 8:30pm all the way
+          through to 5:30am the next day. With former Headliners including Becky
+          Hill and Scouting for Girls, the 2022 May Ball promises entertainment
+          delights that are certainly not to be missed! Please keep your eyes
+          attuned to this space for the release of our Entertainments program
+          and the reveal of our Site Plan.
         </p>
       </section>
       <section
@@ -73,8 +91,15 @@
       >
         <h2 id="entertainment-title">Entertainment</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-          excepturi!
+          The 2022 May Ball Theme is Once Upon a Time in Hollywood. This was
+          originally the theme for the 2021 May Ball, which was cancelled due to
+          the Coronavirus Pandemic. We feel that this theme is even more apt in
+          2022. During the pandemic, more than ever before, we turned to
+          streaming and movies for an escape from our new reality. This is what
+          the 2022 May Ball is all about. For one night only join us at the
+          fictional ‘DMB Studios’ as we take you on a tour of the offerings of
+          Classic Hollywood; Science Fiction, Spaghetti Western, Espionage,
+          Romance, and more. We can’t wait to see you there!
         </p>
       </section>
       <section class="static" id="tickets" aria-labelledby="tickets-title">
@@ -87,7 +112,12 @@
           <a href="/ticketing-policy.pdf" target="_blank"
             >ticketing terms and conditions</a
           >. <br /><br />
-          The general release date will be announced soon!<br />
+
+          The ticket release dates have been announced! All tickets are
+          available at noon on their respective release dates.<br />
+          <strong>Current Downing Students</strong> - 24.02.22 <br />
+          <strong>Downing Alumni</strong> - 26.02.22 <br />
+          <strong>All Students and Alumni</strong> - 28.02.22 <br /><br />
           The ticket prices shown below are
           <span class="price">student/non-student/bursary</span>. Guests will
           pay the same price as the person who invited them, except where access
@@ -96,9 +126,10 @@
           means-tested metric as set out by the Committee. <br />
           Alumni in the 2020/21 graduation groups can buy tickets at
           <strong>student</strong> prices. <br /><br />
-          Current Downing students will be allowed 4 guests. Downing alumni are
-          allowed 1 guest. The guests do <em>not</em> need to buy the same
-          ticket type as the person who invited them.
+          Current Downing students, and alumni in the 2020/21 groups, will be
+          allowed 4 guests. All other Downing alumni may invite up to 2 guests.
+          The guests do <em>not</em> need to buy the same ticket type as the
+          person who invited them.
         </p>
         <div class="ticket-prices">
           <ul class="flex">
@@ -186,14 +217,29 @@
 
       <section class="parallax">
         <img
-          src="static/img/stock_cinema.jpg"
-          alt="Cinema"
+          src="static/img/producer_director.jpg"
+          alt="Producer and Director"
           class="parallax-img"
         />
       </section>
 
+      <section class="static" id="charities" aria-labelledby="charities-title">
+        <h2 id="charities-title">Our Charities</h2>
+        <p>The May Ball is proud to be supporting several charities in partnership this year. We donated a pair of tickets to the Pink Week Charity Raffle, and have two charity partners for our opt-in ticketing donations.
+
+          <br><br>
+          Our charity partners for this event are What's A Pound? and OneRio.
+
+        </p>
+        <div class="charities">
+          <a href="https://www.whatsapound.com/" target="_blank"><img src="/static/img/whatsapound.png" alt="What's a Pound?"></a>
+          <a href="https://www.onerio.co.uk/" target="_blank"><img src="/static/img/onerio.png" alt="What's a Pound?"></a>
+        </div>
+      </section>
+
       <section class="static" id="committee" aria-labelledby="committee-title">
         <h2 id="committee-title">Committee</h2>
+        <p>Committee headshots coming soon - watch this space!</p>
         <div class="committee">
           <div class="committee-member" id="president">
             <h3>President</h3>
